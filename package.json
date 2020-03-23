@@ -1,0 +1,19 @@
+{
+  "name": "mtcunilag_orderbot",
+  "version": "1.0.0",
+  "description": "Bot that takes Orders in simple steps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onyxolu/MtcUnilag_OrderBot.git"
+  },
+  "author": "MTC Unilag",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onyxolu/MtcUnilag_OrderBot/issues"
+  },
+  "homepage": "https://github.com/onyxolu/MtcUnilag_OrderBot#readme"
+}
