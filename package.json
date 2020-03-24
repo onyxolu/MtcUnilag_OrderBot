@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/onyxolu/MtcUnilag_OrderBot/issues"
   },
-  "homepage": "https://github.com/onyxolu/MtcUnilag_OrderBot#readme"
+  "homepage": "https://github.com/onyxolu/MtcUnilag_OrderBot#readme",
+  "dependencies": {
+    "botbuilder": "^4.8.0",
+    "dotenv": "^8.2.0",
+    "restify": "^8.5.1"
+  }
 }

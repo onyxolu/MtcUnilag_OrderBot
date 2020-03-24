@@ -29,6 +29,8 @@ Install all libraries required
 
 ## Procedure
 
+- create a file named "app.js" in the root directory
+
 - import third party dependencies
 
   ```code
