@@ -24,7 +24,7 @@ Install all libraries required
 - dotenv
 
   ```terminal
-  npm install --save botbuilder restify dotenv
+  npm install --save botbuilder@3.13.1 restify dotenv
   ```
 
 ## Procedure

@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/onyxolu/MtcUnilag_OrderBot#readme",
   "dependencies": {
-    "botbuilder": "^4.8.0",
+    "botbuilder": "^3.13.1",
     "dotenv": "^8.2.0",
     "restify": "^8.5.1"
   }
