@@ -16,7 +16,6 @@ var inMemoryStorage = new botbuilder.MemoryBotStorage();
 var bot = new botbuilder.UniversalBot(connector, session => {
   session.beginDialog("/welcome");
 }).set("storage", inMemoryStorage);
-
 server.post("/api/messages", connector.listen());
 
 bot.dialog("/welcome", [
