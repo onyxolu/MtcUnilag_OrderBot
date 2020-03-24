@@ -1,0 +1,18 @@
+{
+    "name": "Order Bot",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "https://localhost:3978/api/messages",
+            "id": "ac57d580-6dbf-11ea-ade1-7b7705922156",
+            "name": "Order Bot"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "path": "C:\\Users\\olumide.ogundare\\Desktop\\Personal Projects\\MtcUnilag_OrderBot\\Order Bot.bot",
+    "overrides": null
+}
