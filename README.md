@@ -43,8 +43,8 @@ Install all libraries required
   ```code
   var server = restify.createServer();
 
-  server.listen(process.env.port || process.env.PORT || 3978, function() {
-    console.log("%s listening.....", server.name);
+  server.listen(process.env.port || process.env.PORT || 3978, () => {
+  console.log("%s listening.....", server.name);
   });
   ```
 
@@ -58,19 +58,22 @@ Install all libraries required
   ```
 
   ```code
-  var bot = new botbuilder.UniversalBot(connector);
+  var inMemoryStorage = new botbuilder.MemoryBotStorage();
+  var bot = new botbuilder.UniversalBot(connector, session => {
+  session.beginDialog("/welcome");
+  }).set("storage", inMemoryStorage);
   server.post("/api/messages", connector.listen());
   ```
 
 - Bot Dialogs
 
   ```code
-  bot.dialog("/", [
-    function(session) {
-      botBuilder.Prompts.text(
-        session,
-        "Hello! welcome to our MTC Unilag Order Bot"
-      );
-    },
+  bot.dialog("/welcome", [
+  session => {
+    botbuilder.Prompts.text(
+      session,
+      "Hello! welcome to our MTC Unilag Order Bot"
+    );
+  }
   ]);
   ```

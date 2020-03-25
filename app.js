@@ -1,25 +1,31 @@
-var botbuilder = require("botbuilder");
-var restify = require("restify");
+const botbuilder =  require('botbuilder');
+const restify = require('restify');
 
-var server = restify.createServer();
+const server = restify.createServer();
 
-server.listen(process.env.port || process.env.PORT || 3978, function() {
-  console.log("%s listening.....", server.name);
+server.listen(process.env.PORT || 8080, ()=>console.log("listening...",server.name, server.url));
+
+const connector =new botbuilder.ChatConnector({
+    appId : '',
+    appPassword : ''
 });
 
-var connector = new botbuilder.ChatConnector({
-  appId: "",
-  appPassword: ""
-});
 
-var bot = new botbuilder.UniversalBot(connector);
-server.post("/api/messages", connector.listen());
+//create the chat bot
+const inMemoryStorage = new botbuilder.MemoryBotStorage();
 
-bot.dialog("/", [
-  function(session) {
-    botbuilder.Prompts.text(
-      session,
-      "Hello! welcome to our MTC Unilag Order Bot"
-    );
-  }
+const bot = new botbuilder.UniversalBot(connector,session=>{
+    session.beginDialog("/welcome");
+}).set("storage",inMemoryStorage);
+
+server.post("/api/messages",connector.listen());
+
+//bot dialogs
+bot.dialog("/welcome",[
+    session => {
+        botbuilder.Prompts.text(
+            session,
+            "Hello! this is Emmanuel's order bot"
+        );
+    }
 ]);
