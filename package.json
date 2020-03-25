@@ -1,0 +1,25 @@
+{
+  "name": "mtcunilag_orderbot",
+  "version": "1.0.0",
+  "description": "a simple bot that takes in orders",
+  "main": "app.js",
+  "dependencies": {
+    "botbuilder": "^3.13.1",
+    "dotenv": "^8.2.0",
+    "restify": "^8.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onyxolu/MtcUnilag_OrderBot.git"
+  },
+  "author": "Chukwurah Emmanuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onyxolu/MtcUnilag_OrderBot/issues"
+  },
+  "homepage": "https://github.com/onyxolu/MtcUnilag_OrderBot#readme"
+}
