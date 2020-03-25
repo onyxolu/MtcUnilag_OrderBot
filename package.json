@@ -1,0 +1,25 @@
+{
+  "name": "mtcunilag_orderbot",
+  "version": "1.0.0",
+  "description": "This is a basic bot takes orders in simple steps designed by the ChatBots user group of Microsoft Tech Community Unilag (MTC Unilag)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onyxolu/MtcUnilag_OrderBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onyxolu/MtcUnilag_OrderBot/issues"
+  },
+  "homepage": "https://github.com/onyxolu/MtcUnilag_OrderBot#readme",
+  "dependencies": {
+    "botbuilder": "^3.13.1",
+    "dotenv": "^8.2.0",
+    "restify": "^8.5.1"
+  }
+}
